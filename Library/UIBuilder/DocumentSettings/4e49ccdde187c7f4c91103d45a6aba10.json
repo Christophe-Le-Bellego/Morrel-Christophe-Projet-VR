@@ -3,8 +3,8 @@
     "UxmlPath": "Assets/UI Toolkit/GameUI.uxml",
     "CanvasX": 0,
     "CanvasY": 0,
-    "CanvasWidth": 350,
-    "CanvasHeight": 450,
+    "CanvasWidth": 175,
+    "CanvasHeight": 225,
     "MatchGameView": false,
     "ZoomScale": 1.0,
     "PanOffset": {

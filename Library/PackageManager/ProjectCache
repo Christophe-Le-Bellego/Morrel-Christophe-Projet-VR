@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638996613604852487
+      ticks: 639008755705581135
     m_Hash: 290767718
   m_LockFileStatus:
     m_FilePath: C:/Users/chlebelleg/Projet VR/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638996613656126925
+      ticks: 639008755705581135
     m_Hash: 2153327825
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -419,10 +419,12 @@ m_ResolvedPackages:
     - 1.14.2
     - 1.15.0
     - 1.16.0
+    - 1.17.0
     compatible:
     - 1.14.2
     - 1.15.0
     - 1.16.0
+    - 1.17.0
     recommended: 1.14.2
     deprecated: []
   dependencies:

@@ -1,6 +1,8 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,13 +28,22 @@ public class PlayerController : MonoBehaviour
     }
     */
 
+
+
     public CharacterController controller;
     private float rotationX = 0.0f;
     private bool isGrounded = false;
     private Vector3 velocity = Vector3.zero;
     public int vie = 100;
     public int MaxVie = 100;
- 
+    public event Action OnHealthChange;
+
+    // faire un OnHealthChange?.Invoke()
+    
+    void setVie(int vie)
+    {
+        this.vie = vie; 
+    }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

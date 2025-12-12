@@ -1,9 +1,9 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.2/staging' branch; Version is '6000.2.12f1 (e89d5df0e333) revision 15244637'; Using compiler version '194234433'; Build Type 'Release'
 OS: 'Windows 11  (10.0.26100) 64bit Education' Language: 'fr' Physical Memory: 32456 MB
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-chlebelleg" at "2025-12-12T16:03:27.4533249Z"
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
-Date: 2025-12-12T13:53:46Z
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-chlebelleg" at "2025-12-12T13:53:46.0707328Z"
+Date: 2025-12-12T16:03:27Z
 
 COMMAND LINE ARGUMENTS:
 C:\Program Files\Unity\Hub\Editor\6000.2.12f1\Editor\Unity.exe
@@ -17,7 +17,7 @@ C:/Users/chlebelleg/Projet VR
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-62111
+61548
 -licensingIpc
 LicenseClient-chlebelleg
 -job-worker-count
@@ -65,12 +65,12 @@ C:/Users/chlebelleg/Projet VR
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [10520]  Target information:
+Player connection [25064]  Target information:
 
-Player connection [10520]  * "[IP] 172.16.36.69 [Port] 0 [Flags] 2 [Guid] 1249617957 [EditorId] 1249617957 [Version] 1048832 [Id] WindowsEditor(7,b005pc05) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [25064]  * "[IP] 172.16.36.69 [Port] 0 [Flags] 2 [Guid] 2194828000 [EditorId] 2194828000 [Version] 1048832 [Id] WindowsEditor(7,b005pc05) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [10520] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [10520] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25064] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [25064] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 9
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -82,7 +82,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 1.60 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.2.12f1 (e89d5df0e333)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.2.12f1/Editor/Data/Resources/UnitySubsystems
@@ -98,43 +98,43 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.2.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.2.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56024
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56144
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001348 seconds.
-- Loaded All Assemblies, in  0.356 seconds
+Registered in 0.002550 seconds.
+- Loaded All Assemblies, in  0.500 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.278 seconds
-Domain Reload Profiling: 632ms
-	BeginReloadAssembly (118ms)
+- Finished resetting the current domain, in  0.358 seconds
+Domain Reload Profiling: 857ms
+	BeginReloadAssembly (188ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (38ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (43ms)
-	LoadAllAssembliesAndSetupDomain (146ms)
-		LoadAssemblies (116ms)
+	RebuildCommonClasses (64ms)
+	RebuildNativeTypeToScriptingClass (18ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (167ms)
+		LoadAssemblies (183ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (143ms)
-			TypeCache.Refresh (142ms)
-				TypeCache.ScanAssembly (129ms)
+		AnalyzeDomain (164ms)
+			TypeCache.Refresh (163ms)
+				TypeCache.ScanAssembly (150ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (278ms)
+	FinalizeReload (359ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (244ms)
+		SetupLoadedEditorAssemblies (324ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (42ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (57ms)
-			ProcessInitializeOnLoadAttributes (104ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
+			InitializePlatformSupportModulesInManaged (49ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (129ms)
+			ProcessInitializeOnLoadMethodAttributes (72ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -142,411 +142,272 @@ Domain Reload Profiling: 632ms
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
-Begin MonoManager ReloadAssembly
-[Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Error: HandshakeResponse reported an error:
 	ResponseCode: 505
 	ResponseStatus: Unsupported protocol version '1.17.4'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-chlebelleg"
 [Licensing::IpcConnector] LicenseClient-chlebelleg channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-chlebelleg-6000.2.12" at "2025-12-12T13:53:47.7650842Z"
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-chlebelleg-6000.2.12" at "2025-12-12T16:03:29.5344798Z"
+Begin MonoManager ReloadAssembly
+[Licensing::Module] Licensing is not yet initialized.
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.17.4+4293ba1
-  Session Id:              ce9c5c51b03042c0ab4928f84b05555d
-  Correlation Id:          9b4f06faf88ccccdb0f80204a248cb70
-  External correlation Id: 5959757424053484646
+  Session Id:              392a7198d812458388d1f260b9839bbc
+  Correlation Id:          43e4665abf09917f305b818271944dd9
+  External correlation Id: 8196516492186845206
   Machine Id:              jIPksGfeyXY150r6iFjDYzhxlWY=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-chlebelleg-6000.2.12" (connect: 0.00s, validation: 0.00s, handshake: 1.49s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-chlebelleg-6000.2.12-notifications" at "2025-12-12T13:53:49.2555796Z"
-[Licensing::Module] Licensing Background thread has ended after 3.19s
-[Licensing::Module] Licensing is initialized (took 1.74s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-chlebelleg-6000.2.12" (connect: 0.00s, validation: 0.00s, handshake: 1.34s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-chlebelleg-6000.2.12-notifications" at "2025-12-12T16:03:30.8765785Z"
+[Licensing::Module] Licensing Background thread has ended after 3.42s
+[Licensing::Module] Licensing is initialized (took 1.34s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 20067524498188-UnityPersXXXX
   Product: Unity Personal
   Type: Assigned
   Expiration: Unlimited
-- Loaded All Assemblies, in  2.248 seconds
-Refreshing native plugins compatible for Editor in 0.54 ms, found 3 plugins.
+- Loaded All Assemblies, in  1.839 seconds
+Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.446 seconds
-Domain Reload Profiling: 2693ms
-	BeginReloadAssembly (1881ms)
+- Finished resetting the current domain, in  0.455 seconds
+Domain Reload Profiling: 2293ms
+	BeginReloadAssembly (1477ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
+		CreateAndSetChildDomain (24ms)
 	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (299ms)
-		LoadAssemblies (226ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (297ms)
+		LoadAssemblies (231ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (151ms)
-			TypeCache.Refresh (123ms)
-				TypeCache.ScanAssembly (113ms)
-			BuildScriptInfoCaches (22ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (446ms)
+		AnalyzeDomain (142ms)
+			TypeCache.Refresh (114ms)
+				TypeCache.ScanAssembly (105ms)
+			BuildScriptInfoCaches (21ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (455ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (357ms)
+		SetupLoadedEditorAssemblies (370ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (1ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (69ms)
-			ProcessInitializeOnLoadAttributes (260ms)
-			ProcessInitializeOnLoadMethodAttributes (21ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (273ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (5ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
 Refreshing native plugins compatible for Editor in 0.55 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3858 unused Assets / (1.5 MB). Loaded Objects now: 4350.
-Memory consumption went from 83.2 MB to 81.7 MB.
-Total: 7.161300 ms (FindLiveObjects: 0.318800 ms CreateObjectMapping: 0.271000 ms MarkObjects: 5.347300 ms  DeleteObjects: 1.221800 ms)
+Unloading 3858 unused Assets / (1.3 MB). Loaded Objects now: 4350.
+Memory consumption went from 83.3 MB to 82.0 MB.
+Total: 7.085900 ms (FindLiveObjects: 0.336400 ms CreateObjectMapping: 0.302500 ms MarkObjects: 4.841200 ms  DeleteObjects: 1.603200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 861.447005 seconds.
-  path: Assets/Scripts/Ennemy.cs
-  artifactKey: Guid(c83fa27a46f1a134da34f000b01bf1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Ennemy.cs using Guid(c83fa27a46f1a134da34f000b01bf1c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '59b29c746585b251ce01559f9da7de2c') in 0.0056603 seconds
+  Time since last request: 8643.105213 seconds.
+  path: Assets/Prefabs/Zombie_T-Pose.prefab
+  artifactKey: Guid(422bde85fe0a6c9438eb6e42b20ecad3) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Prefabs/Zombie_T-Pose.prefab using Guid(422bde85fe0a6c9438eb6e42b20ecad3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a9e1ce9356b3597e739fc3848bcd7873') in 0.139923 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 111
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/GAMWILL/GAMWILL Zombie fun character free sample/Animation/Zombie_Attack.fbx
+  artifactKey: Guid(9f52bf79f15c002468682866aeee29d4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/GAMWILL/GAMWILL Zombie fun character free sample/Animation/Zombie_Attack.fbx using Guid(9f52bf79f15c002468682866aeee29d4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '6e1ae04f651c29921e8bf6b7e1c556aa') in 0.0265599 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 99
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/GAMWILL
+  artifactKey: Guid(019ec635d26a2034abefc34f49133005) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/GAMWILL using Guid(019ec635d26a2034abefc34f49133005) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3a75fc7e21e794e4022738c8902c3701') in 0.0023075 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Scripts/GameHandler.cs
+  artifactKey: Guid(b2d7b088fed7ae34b8567ea436d8aa05) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/GameHandler.cs using Guid(b2d7b088fed7ae34b8567ea436d8aa05) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '13fb76604d763906148203d3a4bb4fd0') in 0.0024242 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 0.94 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3850 unused Assets / (1.3 MB). Loaded Objects now: 4352.
-Memory consumption went from 82.7 MB to 81.4 MB.
-Total: 6.536800 ms (FindLiveObjects: 0.394600 ms CreateObjectMapping: 0.455500 ms MarkObjects: 4.478300 ms  DeleteObjects: 1.207200 ms)
+Received Import Request.
+  Time since last request: 0.000062 seconds.
+  path: Assets/GAMWILL/GAMWILL Zombie fun character free sample/Prefab
+  artifactKey: Guid(d5a19c2dd518c184eafc696dbb5a963d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/GAMWILL/GAMWILL Zombie fun character free sample/Prefab using Guid(d5a19c2dd518c184eafc696dbb5a963d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e2f74f1464ad14b6fc3fa84e714f873b') in 0.0017388 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3850 unused Assets / (1.2 MB). Loaded Objects now: 4352.
-Memory consumption went from 82.7 MB to 81.5 MB.
-Total: 6.792200 ms (FindLiveObjects: 0.412500 ms CreateObjectMapping: 0.425800 ms MarkObjects: 4.760400 ms  DeleteObjects: 1.192800 ms)
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Scripts/Spawner.cs
+  artifactKey: Guid(be3fb9ded97a0c0498836be34a6e7e34) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/Spawner.cs using Guid(be3fb9ded97a0c0498836be34a6e7e34) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '84524ddcd1a7e30eb6d1fbfc6fd856be') in 0.0018448 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3850 unused Assets / (1.2 MB). Loaded Objects now: 4352.
-Memory consumption went from 82.7 MB to 81.4 MB.
-Total: 6.665000 ms (FindLiveObjects: 0.436200 ms CreateObjectMapping: 0.502800 ms MarkObjects: 4.403000 ms  DeleteObjects: 1.321900 ms)
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/GAMWILL/GAMWILL Zombie fun character free sample/Mesh/Zombie_T-Pose.fbx
+  artifactKey: Guid(119ea952bda91a347a953d82d96efb62) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/GAMWILL/GAMWILL Zombie fun character free sample/Mesh/Zombie_T-Pose.fbx using Guid(119ea952bda91a347a953d82d96efb62) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4f1be8caec42947aec921497945b20f7') in 0.0093742 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 99
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3850 unused Assets / (1.3 MB). Loaded Objects now: 4352.
-Memory consumption went from 82.7 MB to 81.4 MB.
-Total: 7.047000 ms (FindLiveObjects: 0.412400 ms CreateObjectMapping: 0.404200 ms MarkObjects: 4.846800 ms  DeleteObjects: 1.382400 ms)
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Scripts/PlayerController.cs
+  artifactKey: Guid(48cb541f82c39484782f48bca2ef7a90) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/PlayerController.cs using Guid(48cb541f82c39484782f48bca2ef7a90) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5d4b1ce7235c43a6cb1e7c8fec06f024') in 0.002105 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  0.468 seconds
-Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.525 seconds
-Domain Reload Profiling: 994ms
-	BeginReloadAssembly (150ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (259ms)
-		LoadAssemblies (228ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (106ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (92ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (525ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (409ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (115ms)
-			ProcessInitializeOnLoadAttributes (263ms)
-			ProcessInitializeOnLoadMethodAttributes (21ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3856 unused Assets / (1.2 MB). Loaded Objects now: 4354.
-Memory consumption went from 84.1 MB to 82.9 MB.
-Total: 6.748300 ms (FindLiveObjects: 0.425700 ms CreateObjectMapping: 0.440000 ms MarkObjects: 4.664200 ms  DeleteObjects: 1.216800 ms)
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/GAMWILL/GAMWILL Zombie fun character free sample/Demo_Scene/Demo_Scene.unity
+  artifactKey: Guid(f7182ce95cf5e804fa4c0cacae151d6d) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/GAMWILL/GAMWILL Zombie fun character free sample/Demo_Scene/Demo_Scene.unity using Guid(f7182ce95cf5e804fa4c0cacae151d6d) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'db07bd476d056b9bf93a6f322e268327') in 0.0021565 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3850 unused Assets / (1.2 MB). Loaded Objects now: 4354.
-Memory consumption went from 84.3 MB to 83.1 MB.
-Total: 22.301800 ms (FindLiveObjects: 0.344900 ms CreateObjectMapping: 0.364200 ms MarkObjects: 20.586900 ms  DeleteObjects: 1.004400 ms)
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/GAMWILL/GAMWILL Zombie fun character free sample/Animation/Zombie_Idle.fbx
+  artifactKey: Guid(83ff6f27288b9854bb43453b86bf8019) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/GAMWILL/GAMWILL Zombie fun character free sample/Animation/Zombie_Idle.fbx using Guid(83ff6f27288b9854bb43453b86bf8019) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '39b63edfb3fe0b698905badf93c0cfa9') in 0.0103042 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 99
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.432 seconds
-Refreshing native plugins compatible for Editor in 0.50 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.479 seconds
-Domain Reload Profiling: 910ms
-	BeginReloadAssembly (142ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (25ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (20ms)
-	LoadAllAssembliesAndSetupDomain (235ms)
-		LoadAssemblies (203ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (103ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (90ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (479ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (376ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (94ms)
-			ProcessInitializeOnLoadAttributes (256ms)
-			ProcessInitializeOnLoadMethodAttributes (18ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (4ms)
-Refreshing native plugins compatible for Editor in 0.69 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3856 unused Assets / (1.2 MB). Loaded Objects now: 4355.
-Memory consumption went from 84.1 MB to 83.0 MB.
-Total: 6.484800 ms (FindLiveObjects: 0.366700 ms CreateObjectMapping: 0.439400 ms MarkObjects: 4.398300 ms  DeleteObjects: 1.279100 ms)
+Received Import Request.
+  Time since last request: 68.197960 seconds.
+  path: Assets/Free medieval weapons/Textures/Arrows_Arrows_MetallicSmoothness.png
+  artifactKey: Guid(d3e1f432b8025174a8f990ee91f60053) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Free medieval weapons/Textures/Arrows_Arrows_MetallicSmoothness.png using Guid(d3e1f432b8025174a8f990ee91f60053) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5046d4e3d312eb5ec20fa225a575d948') in 0.0287515 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.37 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3850 unused Assets / (1.2 MB). Loaded Objects now: 4355.
-Memory consumption went from 84.3 MB to 83.1 MB.
-Total: 7.185200 ms (FindLiveObjects: 0.364800 ms CreateObjectMapping: 0.405900 ms MarkObjects: 5.161100 ms  DeleteObjects: 1.252300 ms)
+Received Import Request.
+  Time since last request: 0.017078 seconds.
+  path: Assets/Free medieval weapons/Textures/Swords_DH_low_Sword_DH_AlbedoTransparency.png
+  artifactKey: Guid(7e122fb917fbdb24d83aad3cad9d6106) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Free medieval weapons/Textures/Swords_DH_low_Sword_DH_AlbedoTransparency.png using Guid(7e122fb917fbdb24d83aad3cad9d6106) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e3ed1d4e99e32bdbdf3004b67d09cee8') in 0.0108256 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-[Licensing::Client] Successfully resolved entitlement details
-- Loaded All Assemblies, in  0.451 seconds
-Refreshing native plugins compatible for Editor in 0.45 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.407 seconds
-Domain Reload Profiling: 859ms
-	BeginReloadAssembly (142ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (28ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (19ms)
-	LoadAllAssembliesAndSetupDomain (253ms)
-		LoadAssemblies (205ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (114ms)
-			TypeCache.Refresh (6ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (102ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (407ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (325ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (64ms)
-			ProcessInitializeOnLoadAttributes (228ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 0.95 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3856 unused Assets / (1.0 MB). Loaded Objects now: 4356.
-Memory consumption went from 84.1 MB to 83.1 MB.
-Total: 6.633300 ms (FindLiveObjects: 0.391300 ms CreateObjectMapping: 0.401700 ms MarkObjects: 4.793400 ms  DeleteObjects: 1.045800 ms)
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Free medieval weapons/Textures/Arrows_Arrows_AO.png
+  artifactKey: Guid(06fc7d8c9f806f54abf7423dd56c52a8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Free medieval weapons/Textures/Arrows_Arrows_AO.png using Guid(06fc7d8c9f806f54abf7423dd56c52a8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e24ed7cf1f1863ee035548791c0597c4') in 0.0091604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.425 seconds
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.448 seconds
-Domain Reload Profiling: 874ms
-	BeginReloadAssembly (138ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (17ms)
-	LoadAllAssembliesAndSetupDomain (236ms)
-		LoadAssemblies (202ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (102ms)
-			TypeCache.Refresh (5ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (91ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (449ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (355ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (65ms)
-			ProcessInitializeOnLoadAttributes (256ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 0.88 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3856 unused Assets / (1.2 MB). Loaded Objects now: 4357.
-Memory consumption went from 84.1 MB to 82.9 MB.
-Total: 6.802100 ms (FindLiveObjects: 0.456500 ms CreateObjectMapping: 0.501900 ms MarkObjects: 4.537800 ms  DeleteObjects: 1.304500 ms)
+Received Import Request.
+  Time since last request: 0.000155 seconds.
+  path: Assets/Free medieval weapons
+  artifactKey: Guid(daebf4c880ed678448a776ccc607b936) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Free medieval weapons using Guid(daebf4c880ed678448a776ccc607b936) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '801efc6c99a293e8e4f9a790284f7a33') in 0.0021866 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.02 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3850 unused Assets / (1.2 MB). Loaded Objects now: 4357.
-Memory consumption went from 84.3 MB to 83.1 MB.
-Total: 13.774900 ms (FindLiveObjects: 0.907700 ms CreateObjectMapping: 0.510900 ms MarkObjects: 11.122200 ms  DeleteObjects: 1.232600 ms)
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Free medieval weapons/Textures/Swords_low_Swords_OH_MetallicSmoothness.png
+  artifactKey: Guid(687bd50e938ffb1478645597c5b455e4) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Free medieval weapons/Textures/Swords_low_Swords_OH_MetallicSmoothness.png using Guid(687bd50e938ffb1478645597c5b455e4) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '41271ded1280e75afae7b53fc504bcc4') in 0.0141892 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.425 seconds
-Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Unable to send message (not connected to server process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.487 seconds
-Domain Reload Profiling: 913ms
-	BeginReloadAssembly (137ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (27ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (18ms)
-	LoadAllAssembliesAndSetupDomain (233ms)
-		LoadAssemblies (198ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (103ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (90ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (487ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (379ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (2ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (97ms)
-			ProcessInitializeOnLoadAttributes (253ms)
-			ProcessInitializeOnLoadMethodAttributes (20ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (5ms)
-Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3856 unused Assets / (1.2 MB). Loaded Objects now: 4358.
-Memory consumption went from 84.2 MB to 82.9 MB.
-Total: 6.593500 ms (FindLiveObjects: 0.416500 ms CreateObjectMapping: 0.508600 ms MarkObjects: 4.439200 ms  DeleteObjects: 1.228200 ms)
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Free medieval weapons/Textures/Wooden Bow_1_Wooden Bow_1_MetallicSmoothness.png
+  artifactKey: Guid(6b2f377047964624f9c92c7fcb984fcc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Free medieval weapons/Textures/Wooden Bow_1_Wooden Bow_1_MetallicSmoothness.png using Guid(6b2f377047964624f9c92c7fcb984fcc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b5a0ceb75aa930b2b608d57cb5c4a723') in 0.0088165 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
-Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Free medieval weapons/Textures/Swords_low_Swords_OH_Normal.png
+  artifactKey: Guid(3867c4ffe76f5d24999eb411332f2913) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Free medieval weapons/Textures/Swords_low_Swords_OH_Normal.png using Guid(3867c4ffe76f5d24999eb411332f2913) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f4d32eb436124805212898ac99be3132') in 0.0146574 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Free medieval weapons/README.txt
+  artifactKey: Guid(8c5b2fdc58c472b408bae55d6fafec4e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Free medieval weapons/README.txt using Guid(8c5b2fdc58c472b408bae55d6fafec4e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c19bc3a7d0f2572e2cd6cc6d2c61e3d3') in 0.0036119 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000093 seconds.
+  path: Assets/Free medieval weapons/Textures/OneSided_Axes_low_Axes_OS_MetallicSmoothness.png
+  artifactKey: Guid(0c471c56f364b0d488b0911e657921d1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Free medieval weapons/Textures/OneSided_Axes_low_Axes_OS_MetallicSmoothness.png using Guid(0c471c56f364b0d488b0911e657921d1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '269aba4007f8b6403bf0c45011f6b9c1') in 0.0085944 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Free medieval weapons/Textures/DoubleSided_Axes_low_Axes_DS_AO.png
+  artifactKey: Guid(cfd8771fc1ff05d46916417df1be0b01) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Free medieval weapons/Textures/DoubleSided_Axes_low_Axes_DS_AO.png using Guid(cfd8771fc1ff05d46916417df1be0b01) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c87678be85a65f1438401d97cd30c786') in 0.0108725 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Free medieval weapons/Prefabs/Sword_DH.prefab
+  artifactKey: Guid(ab8ac2017bc4c9e40b484324e5ee20e7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Free medieval weapons/Prefabs/Sword_DH.prefab using Guid(ab8ac2017bc4c9e40b484324e5ee20e7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '74b9b426a8067e5a8902c5ceb1601fae') in 0.019341 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 8
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Free medieval weapons/Materials/OneSided_Axes_low_Axes_OS_AlbedoTransparency.mat
+  artifactKey: Guid(656525809d4e89a478c60e0b3769be98) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Free medieval weapons/Materials/OneSided_Axes_low_Axes_OS_AlbedoTransparency.mat using Guid(656525809d4e89a478c60e0b3769be98) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '62d49fab50986315e5619e16205c8dba') in 0.0554535 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Free medieval weapons/Materials/Swords_DH_low_Sword_DH_AlbedoTransparency.mat
+  artifactKey: Guid(51ef34ffd9a80fa43a1114c7b566c7a5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Free medieval weapons/Materials/Swords_DH_low_Sword_DH_AlbedoTransparency.mat using Guid(51ef34ffd9a80fa43a1114c7b566c7a5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '79347d44acda0a57129e47a9fa64e983') in 0.0143532 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Free medieval weapons/Textures/DoubleSided_Axes_low_Axes_DS_Normal.png
+  artifactKey: Guid(be0008afd3348b94aa52b7510ce0e980) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Free medieval weapons/Textures/DoubleSided_Axes_low_Axes_DS_Normal.png using Guid(be0008afd3348b94aa52b7510ce0e980) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a873b75b157ecd49ea456c9ad527393e') in 0.0154785 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

@@ -493,6 +493,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4289309445196907576, guid: 3d083df1ba6b40447b2cb35ae722f79b, type: 3}
+      propertyPath: weaponHolder
+      value: 
+      objectReference: {fileID: 974836545}
+    - target: {fileID: 4289309445196907576, guid: 3d083df1ba6b40447b2cb35ae722f79b, type: 3}
       propertyPath: groundCheckMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
@@ -509,6 +513,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1044133574}
   m_SourcePrefab: {fileID: 100100000, guid: 3d083df1ba6b40447b2cb35ae722f79b, type: 3}
+--- !u!4 &974836545 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5079441038543086384, guid: 3d083df1ba6b40447b2cb35ae722f79b, type: 3}
+  m_PrefabInstance: {fileID: 974836544}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1044133571 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2275475919901063716, guid: 3d083df1ba6b40447b2cb35ae722f79b, type: 3}

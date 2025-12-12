@@ -22,13 +22,21 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask groundCheckMask;
 
+
+
+    [Header("Weapon System")]
+    [SerializeField] private Transform weaponHolder;
+    [SerializeField] private GameObject weaponPrefab;
+
+
+
     /*
     public CharacterController GetController(){
         return controller;
     }
     */
 
-
+    private GameObject equippedWeapon;
 
     public CharacterController controller;
     private float rotationX = 0.0f;
@@ -69,8 +77,45 @@ public class PlayerController : MonoBehaviour
 
         controller = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
+
+
+        if (weaponPrefab && weaponHolder)
+        {
+            EquipWeapon();
+        }
+
     }
 
+
+    private void EquipWeapon()
+    {
+        if (equippedWeapon != null)
+            Destroy(equippedWeapon);
+
+        equippedWeapon = Instantiate(weaponPrefab, weaponHolder);
+
+        // S’assurer que l’arme est bien alignée dans la main
+        equippedWeapon.transform.localPosition = Vector3.zero;
+        equippedWeapon.transform.localRotation = Quaternion.identity;
+    }
+
+
+    private void FirePressed(InputAction.CallbackContext obj)
+    {
+        RaycastHit hit;
+
+        // On tire du centre de la caméra
+        Ray ray = cam.ScreenPointToRay(
+            new Vector3(Screen.width / 2.0f, Screen.height / 2.0f, 0)
+        );
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            Debug.Log("Touché : " + hit.transform.name);
+        }
+    }
+
+    /*
     private void FirePressed(InputAction.CallbackContext obj)
     {
         RaycastHit hit;
@@ -81,6 +126,7 @@ public class PlayerController : MonoBehaviour
             Transform objectHit = hit.transform;
         }
     }
+    */
 
     // Update is called once per frame
     void Update()

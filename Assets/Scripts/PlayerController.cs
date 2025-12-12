@@ -37,14 +37,12 @@ public class PlayerController : MonoBehaviour
     public int vie = 100;
     public int MaxVie = 100;
     public event Action OnHealthChange;
+    public float Jump = 5f;
 
-    // faire un OnHealthChange?.Invoke()
-    
-    void setVie(int vie)
-    {
-        this.vie = vie; 
-    }
-    
+    //---------------------------------- faire un OnHealthChange?.Invoke() ----------------------------------
+
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -103,9 +101,22 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(Vector3.up * mouseX);
         
         Vector2 zqsdValue = zqsd.action.ReadValue<Vector2>();
+
+
         controller.Move(transform.TransformDirection(new Vector3(zqsdValue.x, 0, zqsdValue.y)).normalized * moveSensitivity * Time.deltaTime);
+
         
+        
+        if (!controller.isGrounded)
+        {
+            velocity.y += gravity * Time.deltaTime;
+        }
+        
+
+
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 public class Ennemy : MonoBehaviour
 {
     public Transform target;   // Référence à l'objet à suivre
-    public float speed = 1f;
+    public float speed = 5f;
     
 
     void Update()

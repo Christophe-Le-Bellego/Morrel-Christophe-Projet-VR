@@ -4,7 +4,7 @@ public class Spawner : MonoBehaviour
 {
     public Transform player;
     public Ennemy prefab;       // L’objet à faire apparaître
-    public float interval = 20f;     // Temps entre chaque apparition
+    public float interval = 200f;     // Temps entre chaque apparition
     public Vector3 spawnPosition;   // Position de spawn
 
     void Start()

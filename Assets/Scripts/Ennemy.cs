@@ -2,13 +2,18 @@ using UnityEngine;
 
 public class Ennemy : MonoBehaviour
 {
+    [Header("GroundCheck")]
+    [SerializeField] private float groundCheckDistance;
+    [SerializeField] private LayerMask groundCheckMask;
+
     public Transform target;   // Référence à l'objet à suivre
-    public float speed = 10f;
+    public float speed = 0.01f;
     public static int amount = 0;
+
 
     void Update()
     {
-        if (target == null) return;
+
 
         Vector3 direction = target.position - transform.position;
         transform.position += direction.normalized * speed * Time.deltaTime;

@@ -15,7 +15,12 @@ public class Spawner : MonoBehaviour
 
     void SpawnObject()
     {
-        Ennemy instance = Instantiate(prefab, spawnPosition, Quaternion.identity);
-        instance.SetTarget(player);
+        if (Ennemy.amount < 16)
+        {
+            Ennemy instance = Instantiate(prefab, spawnPosition, Quaternion.identity);
+            Ennemy.amount++;
+            instance.SetTarget(player);
+        }
+        
     }
 }

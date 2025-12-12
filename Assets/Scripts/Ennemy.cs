@@ -3,8 +3,8 @@ using UnityEngine;
 public class Ennemy : MonoBehaviour
 {
     public Transform target;   // Référence à l'objet à suivre
-    public float speed = 5f;
-    
+    public float speed = 10f;
+    public static int amount = 0;
 
     void Update()
     {

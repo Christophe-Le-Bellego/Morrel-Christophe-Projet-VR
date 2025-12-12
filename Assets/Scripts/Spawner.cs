@@ -4,7 +4,7 @@ public class Spawner : MonoBehaviour
 {
     public Transform player;
     public Ennemy prefab;       // L’objet à faire apparaître
-    public float interval = 20f;     // Temps entre chaque apparition
+    public float interval = 200f;     // Temps entre chaque apparition
     public Vector3 spawnPosition;   // Position de spawn
 
     void Start()
@@ -15,7 +15,13 @@ public class Spawner : MonoBehaviour
 
     void SpawnObject()
     {
-        Ennemy instance = Instantiate(prefab, spawnPosition, Quaternion.identity);
-        instance.SetTarget(player);
+        if (Ennemy.amount < 16)
+        {
+            //Quaternion rotation = Quaternion.LookRotation(player.position);
+            Ennemy instance = Instantiate(prefab, spawnPosition, prefab.transform.rotation/*Quaternion.identity*/);
+            Ennemy.amount++;
+            instance.SetTarget(player);
+        }
+        
     }
 }

@@ -19,13 +19,25 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        // Vérification importante : Si on touche le joueur, on ignore !
+        // Vï¿½rification importante : Si on touche le joueur, on ignore !
         if (collision.gameObject.CompareTag("Player")) return;
 
-        // On plante la flèche
+        // On plante la flï¿½che
         rb.isKinematic = true;
 
-        // On attache la flèche à l'objet touché (pour qu'elle bouge avec lui)
+    if (collision.gameObject.CompareTag("Ennemy"))
+        {
+            // 1. On cherche le script "Ennemy" sur l'objet qu'on a touchÃ©
+            Ennemy scriptEnnemy = collision.gameObject.GetComponent<Ennemy>();
+            
+            // 2. Si le script existe bien, on baisse sa vie
+            if (scriptEnnemy != null)
+            {
+                scriptEnnemy.vie--; // Ou scriptEnnemy.TakeDamage(1); c'est encore mieux
+            }
+        }
+
+        // On attache la flï¿½che ï¿½ l'objet touchï¿½ (pour qu'elle bouge avec lui)
         transform.parent = collision.transform;
     }
 }

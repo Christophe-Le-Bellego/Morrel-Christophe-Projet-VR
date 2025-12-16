@@ -6,9 +6,10 @@ public class Ennemy : MonoBehaviour
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask groundCheckMask;
 
-    public Transform target;   // Référence à l'objet à suivre
+    public Transform target;   // Rï¿½fï¿½rence ï¿½ l'objet ï¿½ suivre
     public float speed = 0.00000001f;
     public static int amount = 0;
+    public int vie = 2;
 
 
     void Update()
@@ -17,6 +18,7 @@ public class Ennemy : MonoBehaviour
 
         Vector3 direction = target.position - transform.position;
         transform.position += direction.normalized * speed * Time.deltaTime;
+        if (this.vie == 0) Destroy(gameObject);
     }
 
     public void SetTarget(Transform target)

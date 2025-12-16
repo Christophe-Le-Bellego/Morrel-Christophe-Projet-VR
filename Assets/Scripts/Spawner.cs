@@ -1,27 +1,38 @@
 using UnityEngine;
 
+
 public class Spawner : MonoBehaviour
 {
     public Transform player;
-    public Ennemy prefab;       // L’objet à faire apparaître
-    public float interval = 200f;     // Temps entre chaque apparition
+    public Ennemy prefab;       // Lï¿½objet ï¿½ faire apparaï¿½tre
+    public float interval = 20f;     // Temps entre chaque apparition
     public Vector3 spawnPosition;   // Position de spawn
+    public float delaiApresMort = 5f;
+
 
     void Start()
     {
         spawnPosition = transform.position;
-        InvokeRepeating("SpawnObject", 0f, interval);
+        InvokeRepeating("TenterSpawn", 0f, interval);
+    }
+
+
+    void TenterSpawn()
+    {
+        bool delaiRespecte = (Time.time - Ennemy.tempsDerniereMort) > delaiApresMort;
+        if (Ennemy.amount < 4 && delaiRespecte)
+        {
+            SpawnObject();
+        }
     }
 
     void SpawnObject()
     {
-        if (Ennemy.amount < 16)
-        {
-            //Quaternion rotation = Quaternion.LookRotation(player.position);
-            Ennemy instance = Instantiate(prefab, spawnPosition, prefab.transform.rotation/*Quaternion.identity*/);
-            Ennemy.amount++;
-            instance.SetTarget(player);
-        }
-        
+        //Quaternion rotation = Quaternion.LookRotation(player.position);
+        Ennemy instance = Instantiate(prefab, spawnPosition, prefab.transform.rotation/*Quaternion.identity*/);
+        Ennemy.amount++;
+        instance.SetTarget(player);
+                
     }
+
 }

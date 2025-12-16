@@ -94,7 +94,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: d368d8643ae08edee8a9deda7ada3415, type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: efcf7f281256993f89ee119a3d98295c, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: d184cf237afd7dd5aa735700099da0e1, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -152,6 +152,7 @@ MonoBehaviour:
   prefab: {fileID: -5205657562324783944, guid: 422bde85fe0a6c9438eb6e42b20ecad3, type: 3}
   interval: 2
   spawnPosition: {x: 0, y: 0, z: 0}
+  delaiApresMort: 5
 --- !u!4 &318291744
 Transform:
   m_ObjectHideFlags: 0
@@ -200,6 +201,7 @@ MonoBehaviour:
   prefab: {fileID: -5205657562324783944, guid: 422bde85fe0a6c9438eb6e42b20ecad3, type: 3}
   interval: 2
   spawnPosition: {x: 0, y: 0, z: 0}
+  delaiApresMort: 5
 --- !u!4 &352256766
 Transform:
   m_ObjectHideFlags: 0
@@ -251,7 +253,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &705507994
 Light:
   m_ObjectHideFlags: 0
@@ -259,7 +261,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 11
   m_Type: 1
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
@@ -397,7 +399,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &963194227
 Camera:
   m_ObjectHideFlags: 0
@@ -516,6 +518,10 @@ PrefabInstance:
       propertyPath: weaponHolder
       value: 
       objectReference: {fileID: 974836545}
+    - target: {fileID: 4289309445196907576, guid: 3d083df1ba6b40447b2cb35ae722f79b, type: 3}
+      propertyPath: moveSensitivity
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 4289309445196907576, guid: 3d083df1ba6b40447b2cb35ae722f79b, type: 3}
       propertyPath: groundCheckMask.m_Bits
       value: 0
@@ -772,6 +778,7 @@ MonoBehaviour:
   prefab: {fileID: -5205657562324783944, guid: 422bde85fe0a6c9438eb6e42b20ecad3, type: 3}
   interval: 2
   spawnPosition: {x: 0, y: 0, z: 0}
+  delaiApresMort: 5
 --- !u!1 &1408872606
 GameObject:
   m_ObjectHideFlags: 0
@@ -805,6 +812,7 @@ MonoBehaviour:
   prefab: {fileID: -5205657562324783944, guid: 422bde85fe0a6c9438eb6e42b20ecad3, type: 3}
   interval: 2
   spawnPosition: {x: 0, y: 0, z: 0}
+  delaiApresMort: 5
 --- !u!4 &1408872608
 Transform:
   m_ObjectHideFlags: 0

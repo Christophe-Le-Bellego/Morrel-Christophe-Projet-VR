@@ -98,7 +98,7 @@ public class PlayerController : MonoBehaviour
 
         equippedWeapon = Instantiate(weaponPrefab, weaponHolder);
 
-        // S’assurer que l’arme est bien alignée dans la main
+        // Sï¿½assurer que lï¿½arme est bien alignï¿½e dans la main
         equippedWeapon.transform.localPosition = Vector3.zero;
         equippedWeapon.transform.localRotation = Quaternion.identity;
     }
@@ -108,14 +108,14 @@ public class PlayerController : MonoBehaviour
     {
         if (equippedWeapon == null)
         {
-            Debug.LogWarning("Pas d'arme équipée !");
+            //Debug.LogWarning("Pas d'arme ï¿½quipï¿½e !");
             return;
         }
 
         BowShoot bow = equippedWeapon.GetComponent<BowShoot>();
         if (bow == null)
         {
-            Debug.LogWarning("L'arme équipée n'a pas de script BowShoot !");
+            //Debug.LogWarning("L'arme ï¿½quipï¿½e n'a pas de script BowShoot !");
             return;
         }
 

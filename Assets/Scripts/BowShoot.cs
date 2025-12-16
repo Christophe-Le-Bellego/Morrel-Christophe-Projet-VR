@@ -12,9 +12,9 @@ public class BowShoot : MonoBehaviour
         //firePoint.Rotate(0, 90, 0);
         GameObject arrow = Instantiate(arrowPrefab, firePoint.position, firePoint.rotation);
         arrow.transform.Rotate(90, 90, 0, Space.Self);
-        Debug.Log("Shoot instancie");
+        //Debug.Log("Shoot instancie");
         Rigidbody rb = arrow.GetComponent<Rigidbody>();
         rb.linearVelocity = firePoint.right * arrowSpeed;
-        Debug.Log("FLÈCHE TIRÉE");
+        //Debug.Log("FLï¿½CHE TIRï¿½E");
     }
 }

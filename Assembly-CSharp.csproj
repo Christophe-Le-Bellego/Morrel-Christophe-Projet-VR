@@ -61,11 +61,14 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.12f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\ApplicationQuit.cs" />
+    <Compile Include="Assets\Scripts\BowShoot.cs" />
     <Compile Include="Assets\Input Actions.cs" />
     <Compile Include="Assets\Scripts\Spawner.cs" />
     <Compile Include="Assets\Scripts\GameHandler.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Ennemy.cs" />
+    <Compile Include="Assets\Scripts\Bulllet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Free medieval weapons\README.txt" />

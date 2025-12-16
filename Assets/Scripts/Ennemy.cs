@@ -7,7 +7,7 @@ public class Ennemy : MonoBehaviour
     [SerializeField] private LayerMask groundCheckMask;
 
     public Transform target;   // Référence à l'objet à suivre
-    public float speed = 0.01f;
+    public float speed = 0.00000001f;
     public static int amount = 0;
 
 

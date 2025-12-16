@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
     [Header("Weapon System")]
     [SerializeField] private Transform weaponHolder;
     [SerializeField] private GameObject weaponPrefab;
+  
+    
+   
 
 
 
@@ -37,6 +40,7 @@ public class PlayerController : MonoBehaviour
     */
 
     private GameObject equippedWeapon;
+    
 
     public CharacterController controller;
     private float rotationX = 0.0f;
@@ -100,20 +104,24 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    private void FirePressed(InputAction.CallbackContext obj)
+    private void FirePressed(InputAction.CallbackContext ctx)
     {
-        RaycastHit hit;
-
-        // On tire du centre de la caméra
-        Ray ray = cam.ScreenPointToRay(
-            new Vector3(Screen.width / 2.0f, Screen.height / 2.0f, 0)
-        );
-
-        if (Physics.Raycast(ray, out hit))
+        if (equippedWeapon == null)
         {
-            Debug.Log("Touché : " + hit.transform.name);
+            Debug.LogWarning("Pas d'arme équipée !");
+            return;
         }
+
+        BowShoot bow = equippedWeapon.GetComponent<BowShoot>();
+        if (bow == null)
+        {
+            Debug.LogWarning("L'arme équipée n'a pas de script BowShoot !");
+            return;
+        }
+
+        bow.Shoot();
     }
+
 
     /*
     private void FirePressed(InputAction.CallbackContext obj)
@@ -129,6 +137,7 @@ public class PlayerController : MonoBehaviour
     */
 
     // Update is called once per frame
+
     void Update()
     {
         isGrounded = Physics.CheckSphere(transform.position, groundCheckDistance, groundCheckMask);
@@ -151,18 +160,16 @@ public class PlayerController : MonoBehaviour
 
         controller.Move(transform.TransformDirection(new Vector3(zqsdValue.x, 0, zqsdValue.y)).normalized * moveSensitivity * Time.deltaTime);
 
-        
-        
+       
         if (!controller.isGrounded)
         {
             velocity.y += gravity * Time.deltaTime;
         }
         
-
-
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
+  
 
     }
 }

@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\chlebelleg\\Projet VR\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|c:\\users\\chlebelleg\\projet vr\\assets\\scripts\\bowshoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bowshoot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|C:\\Users\\chlebelleg\\Projet VR\\assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|C:\\Users\\chlebelleg\\Projet VR\\assets\\scripts\\gamehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|C:\\Users\\chlebelleg\\Projet VR\\assets\\scripts\\bulllet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bulllet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|c:\\users\\chlebelleg\\projet vr\\assets\\scripts\\applicationquit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\applicationquit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|C:\\Users\\chlebelleg\\Projet VR\\assets\\input actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|solutionrelative:assets\\input actions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|c:\\users\\chlebelleg\\projet vr\\assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|C:\\Users\\chlebelleg\\Projet VR\\assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|C:\\Users\\chlebelleg\\Projet VR\\assets\\scripts\\ennemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ennemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|C:\\Users\\chlebelleg\\Projet VR\\assets\\scripts\\gamehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5F7B8E02-0560-78BC-D620-82FE2C6B95CA}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +42,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BowShoot.cs",
+              "DocumentMoniker": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Scripts\\BowShoot.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BowShoot.cs",
+              "ToolTip": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Scripts\\BowShoot.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BowShoot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T08:18:38.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Bulllet.cs",
+              "DocumentMoniker": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Scripts\\Bulllet.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Bulllet.cs",
+              "ToolTip": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Scripts\\Bulllet.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Bulllet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T07:28:30.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ApplicationQuit.cs",
+              "DocumentMoniker": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Scripts\\ApplicationQuit.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ApplicationQuit.cs",
+              "ToolTip": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Scripts\\ApplicationQuit.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ApplicationQuit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T07:03:55.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "GameHandler.cs",
               "DocumentMoniker": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Scripts\\GameHandler.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameHandler.cs",
@@ -47,52 +98,52 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Ennemy.cs",
               "DocumentMoniker": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Scripts\\Ennemy.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Ennemy.cs",
               "ToolTip": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Scripts\\Ennemy.cs",
               "RelativeToolTip": "Assets\\Scripts\\Ennemy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T10:03:51.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Spawner.cs",
               "DocumentMoniker": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Scripts\\Spawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Spawner.cs",
               "ToolTip": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Scripts\\Spawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\Spawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-09T08:49:51.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PlayerController.cs",
               "DocumentMoniker": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Scripts\\PlayerController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerController.cs",
               "ToolTip": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Scripts\\PlayerController.cs",
               "RelativeToolTip": "Assets\\Scripts\\PlayerController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAgwIUAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAgwGIAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T10:19:33.716Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Input Actions.cs",
               "DocumentMoniker": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Input Actions.cs",
               "RelativeDocumentMoniker": "Assets\\Input Actions.cs",
               "ToolTip": "C:\\Users\\chlebelleg\\Projet VR\\Assets\\Input Actions.cs",
               "RelativeToolTip": "Assets\\Input Actions.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-25T10:02:24.967Z",
               "EditorCaption": ""

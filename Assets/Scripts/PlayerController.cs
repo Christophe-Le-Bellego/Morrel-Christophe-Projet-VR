@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
     {
         if (Time.time > lastDamageTime + damageCooldown)
         {
-            vie -= 8;
+            this.vie -= 8;
 
             // Le debug pour être SÛR que ça marche
             Debug.Log("Aïe ! Vie restante : " + vie);
@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
 
     public int GetVie()
     {
-        return vie;
+        return this.vie;
     }
 
 

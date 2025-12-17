@@ -13,7 +13,7 @@ public class GameUIHandler : MonoBehaviour
     {
         PlayerControl.OnHealthChange += HealthChanged;
         m_HealthLabel = UIDoc.rootVisualElement.Q<Label>("HealthLabel");
-        m_HealthBarMask = UIDoc.rootVisualElement.Q<VisualElement>("Masque");
+        m_HealthBarMask = UIDoc.rootVisualElement.Q<VisualElement>("HealthBarMask");
 
         HealthChanged();
     }

@@ -26,7 +26,7 @@ public class Ennemy : MonoBehaviour
             GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
             if (playerObj != null)
             {
-                target = playerObj.transform;
+                target = playerObj.transform;       
             }
         }
 

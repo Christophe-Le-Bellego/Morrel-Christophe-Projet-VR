@@ -31,12 +31,14 @@ public class BowShoot : MonoBehaviour
         // On assigne ce matériau au LineRenderer
         laserLine.material = laserMat;
 
+        Color rougeTransparent = new Color(1f, 0f, 0f, 0.3f);
+
         // 3. RÉGLAGES VISUELS (Couleur et Épaisseur)
-        laserLine.startColor = Color.red;
-        laserLine.endColor = Color.red;
+        laserLine.startColor = rougeTransparent;
+        laserLine.endColor = rougeTransparent;
         
-        laserLine.startWidth = 0.05f; // Très fin
-        laserLine.endWidth = 0.05f;
+        laserLine.startWidth = 0.01f; // Très fin
+        laserLine.endWidth = 0.01f;
 
         laserLine.positionCount = 2; // Départ et Arrivée
         laserLine.useWorldSpace = true; // Important !

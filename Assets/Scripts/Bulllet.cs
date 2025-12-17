@@ -31,7 +31,7 @@ public class Bullet : MonoBehaviour
         // 2. Si le script existe bien, on baisse sa vie
         if (scriptEnnemy != null)
         {
-            scriptEnnemy.vie--; // Ou scriptEnnemy.TakeDamage(1); c'est encore mieux
+            scriptEnnemy.TakeDamage(1); // Ou scriptEnnemy.TakeDamage(1); c'est encore mieux
         }
     
 

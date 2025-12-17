@@ -16,6 +16,8 @@ public class Ennemy : MonoBehaviour
     public static int amount = 0;
     public static float tempsDerniereMort = -1f;
 
+
+
     void Start()
     {
         amount++;
@@ -37,6 +39,8 @@ public class Ennemy : MonoBehaviour
             playerScript = target.GetComponent<PlayerController>();
         }
     }
+
+
 
     void Update()
     {
@@ -67,6 +71,7 @@ public class Ennemy : MonoBehaviour
             }
         }
     }
+
 
     public void TakeDamage(int damageAmount)
     {

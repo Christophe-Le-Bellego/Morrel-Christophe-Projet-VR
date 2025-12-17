@@ -11,12 +11,11 @@ public class Ennemy : MonoBehaviour
     public static int amount = 0;
     public int vie = 2;
     public float mort;
-    public static float tempsDerniereMort = -1000f; // Initialisé bas pour pouvoir spawner dès le début
+    public static float tempsDerniereMort = -1f; // Initialisé bas pour pouvoir spawner dès le début
 
 
     void Update()
     {
-
 
         Vector3 direction = target.position - transform.position;
         //transform.position += direction.normalized * speed * Time.deltaTime;
@@ -33,7 +32,7 @@ public class Ennemy : MonoBehaviour
     void Mourir()
     {
         tempsDerniereMort = Time.time;
-        amount --;
+        amount--;
         Destroy(gameObject);
     }
 

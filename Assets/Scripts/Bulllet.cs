@@ -25,17 +25,15 @@ public class Bullet : MonoBehaviour
         // On plante la fl�che
         rb.isKinematic = true;
 
-    if (collision.gameObject.CompareTag("Ennemy"))
+        Ennemy scriptEnnemy = collision.gameObject.GetComponent<Ennemy>();
+              
+        
+        // 2. Si le script existe bien, on baisse sa vie
+        if (scriptEnnemy != null)
         {
-            // 1. On cherche le script "Ennemy" sur l'objet qu'on a touché
-            Ennemy scriptEnnemy = collision.gameObject.GetComponent<Ennemy>();
-            
-            // 2. Si le script existe bien, on baisse sa vie
-            if (scriptEnnemy != null)
-            {
-                scriptEnnemy.vie--; // Ou scriptEnnemy.TakeDamage(1); c'est encore mieux
-            }
+            scriptEnnemy.vie--; // Ou scriptEnnemy.TakeDamage(1); c'est encore mieux
         }
+    
 
         // On attache la fl�che � l'objet touch� (pour qu'elle bouge avec lui)
         transform.parent = collision.transform;

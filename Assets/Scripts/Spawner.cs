@@ -32,6 +32,7 @@ public class Spawner : MonoBehaviour
         Ennemy instance = Instantiate(prefab, spawnPosition, prefab.transform.rotation/*Quaternion.identity*/);
         Ennemy.amount++;
         instance.SetTarget(player);
+        instance.tag = "Ennemy";
                 
     }
 

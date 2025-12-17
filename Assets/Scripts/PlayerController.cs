@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     
    
 
-
+    private GameManager gameManager;
     private GameObject equippedWeapon;
     
 
@@ -61,8 +61,23 @@ public class PlayerController : MonoBehaviour
             // Mise à jour de l'UI
             OnHealthChange.Invoke();
             lastDamageTime = Time.time;
+
+            if (vie <= 0)
+            {
+                Mourir();
+            }
         }
     }
+
+
+    void Mourir()
+{
+    Debug.Log("Le joueur est mort !");
+    if (gameManager != null)
+    {
+        gameManager.GameOver();
+    }
+}
 
     public int GetVie()
     {
@@ -102,6 +117,8 @@ public class PlayerController : MonoBehaviour
         {
             EquipWeapon();
         }
+
+        gameManager = FindFirstObjectByType<GameManager>();
 
     }
 

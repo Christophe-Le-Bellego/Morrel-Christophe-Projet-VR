@@ -47,7 +47,7 @@ public class BowShoot : MonoBehaviour
     void Update()
     {
         // Sécurité : si tu as oublié de mettre le FirePoint, on prend la position de l'objet lui-même
-        Vector3 depart = (firePoint != null) ? firePoint.position : transform.position;
+        Vector3 depart = (firePoint != null) ? firePoint.position + firePoint.right : transform.position;
         Vector3 direction = (firePoint != null) ? firePoint.right : transform.right; 
         // NOTE : Si le laser part vers le haut ou le bas, change "right" par "forward" ou "up"
 

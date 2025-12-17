@@ -30,7 +30,7 @@ public class Spawner : MonoBehaviour
     {
         //Quaternion rotation = Quaternion.LookRotation(player.position);
         Ennemy instance = Instantiate(prefab, spawnPosition, prefab.transform.rotation/*Quaternion.identity*/);
-        Ennemy.amount++;
+        //Ennemy.amount++; // le script Ennemy.cs gere ca tout seul
         instance.SetTarget(player);
     }
 

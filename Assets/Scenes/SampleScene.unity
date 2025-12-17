@@ -519,6 +519,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 974836545}
     - target: {fileID: 4289309445196907576, guid: 3d083df1ba6b40447b2cb35ae722f79b, type: 3}
+      propertyPath: camSensitivity
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4289309445196907576, guid: 3d083df1ba6b40447b2cb35ae722f79b, type: 3}
       propertyPath: moveSensitivity
       value: 15
       objectReference: {fileID: 0}
@@ -540,6 +544,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5294587375881642656, guid: 3d083df1ba6b40447b2cb35ae722f79b, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5294587375881642656, guid: 3d083df1ba6b40447b2cb35ae722f79b, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 5483458984188371995, guid: 3d083df1ba6b40447b2cb35ae722f79b, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 6320762861953220705, guid: 3d083df1ba6b40447b2cb35ae722f79b, type: 3}
@@ -915,7 +927,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786768838}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2d7b088fed7ae34b8567ea436d8aa05, type: 3}
   m_Name: 

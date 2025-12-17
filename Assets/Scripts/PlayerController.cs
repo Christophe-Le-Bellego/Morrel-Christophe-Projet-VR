@@ -59,12 +59,12 @@ public class PlayerController : MonoBehaviour
             Debug.Log("Aïe ! Vie restante : " + vie);
 
             // Mise à jour de l'UI
-            OnHealthChange?.Invoke();
+            OnHealthChange.Invoke();
             lastDamageTime = Time.time;
         }
     }
 
-    public int getVie()
+    public int GetVie()
     {
         return vie;
     }
@@ -175,11 +175,6 @@ public class PlayerController : MonoBehaviour
 
         controller.Move(transform.TransformDirection(new Vector3(zqsdValue.x, 0, zqsdValue.y)).normalized * moveSensitivity * Time.deltaTime);
 
-       
-        if (!controller.isGrounded && velocity.y < 0) 
-        {
-            velocity.y = -2f;
-        }
 
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);

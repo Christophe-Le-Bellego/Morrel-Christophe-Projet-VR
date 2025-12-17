@@ -16,8 +16,8 @@
             {
                 "m_OpenUSSFiles": [],
                 "m_OpenendVisualTreeAssetOldPath": "Assets/UI Toolkit/GameUI.uxml",
-                "m_UxmlPreview": "<ui:UXML xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:ui=\"UnityEngine.UIElements\" xmlns:uie=\"UnityEditor.UIElements\" noNamespaceSchemaLocation=\"../../UIElementsSchema/UIElements.xsd\" editor-extension-mode=\"False\">\r\n    <ui:VisualElement name=\"Vie\" style=\"flex-grow: 1; bottom: auto; top: auto; position: absolute; width: 500px; height: 150px; background-image: url(&quot;project://database/Assets/Tutorial%20Assets/HealthbarBackground.png?fileID=2800000&amp;guid=4dd613d937934bf4c8bc7282e11a41f2&amp;type=3#HealthbarBackground&quot;); font-size: 28px; padding-left: 0; padding-right: 0; margin-left: 0; -unity-text-align: middle-left; white-space: nowrap; align-self: flex-start;\">\r\n        <ui:VisualElement name=\"Masque\" style=\"flex-grow: 1; position: absolute; width: 100%; height: 100%; overflow: hidden;\">\r\n            <ui:VisualElement name=\"Remplissage_vie\" style=\"flex-grow: 1; background-image: url(&quot;project://database/Assets/Tutorial%20Assets/HealthBarFill.png?fileID=2800000&amp;guid=17df3bc68caea7241bd565f1ec3f2bff&amp;type=3#HealthBarFill&quot;); position: absolute; width: 500px; height: 100%;\" />\r\n            <ui:Label name=\"Label_vie\" selectable=\"false\" focusable=\"false\" enable-rich-text=\"false\" parse-escape-sequences=\"true\" text=\"100/100\" triple-click-selects-line=\"false\" style=\"position: absolute; width: 100%; height: 100%; -unity-text-align: middle-center; font-size: 18px; margin-top: 0; margin-right: 0; margin-bottom: 0;\" />\r\n        </ui:VisualElement>\r\n    </ui:VisualElement>\r\n</ui:UXML>\r\n",
-                "m_ContentHash": 1340312614,
+                "m_UxmlPreview": "<ui:UXML xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:ui=\"UnityEngine.UIElements\" xmlns:uie=\"UnityEditor.UIElements\" noNamespaceSchemaLocation=\"../../UIElementsSchema/UIElements.xsd\" editor-extension-mode=\"False\">\n    <ui:VisualElement name=\"HealthBarBackground\" style=\"flex-grow: 1; bottom: auto; top: auto; position: absolute; width: 500px; height: 150px; background-image: url(&quot;project://database/Assets/Tutorial%20Assets/HealthbarBackground.png?fileID=2800000&amp;guid=4dd613d937934bf4c8bc7282e11a41f2&amp;type=3#HealthbarBackground&quot;); font-size: 28px; padding-left: 0; padding-right: 0; margin-left: 0; -unity-text-align: middle-left; white-space: nowrap; align-self: flex-start;\">\n        <ui:VisualElement name=\"HealthBarMask\" style=\"flex-grow: 1; position: absolute; width: 100%; height: 100%; overflow: hidden;\">\n            <ui:VisualElement name=\"HealthBarFill\" style=\"flex-grow: 1; background-image: url(&quot;project://database/Assets/Tutorial%20Assets/HealthBarFill.png?fileID=2800000&amp;guid=17df3bc68caea7241bd565f1ec3f2bff&amp;type=3#HealthBarFill&quot;); position: absolute; width: 500px; height: 100%; overflow: visible;\" />\n        </ui:VisualElement>\n        <ui:Label name=\"HealthLabel\" selectable=\"false\" focusable=\"false\" enable-rich-text=\"false\" parse-escape-sequences=\"true\" text=\"100/100\" triple-click-selects-line=\"false\" style=\"position: absolute; width: 100%; height: 100%; -unity-text-align: middle-center; font-size: 18px; margin-top: 0; margin-right: 0; margin-bottom: 0;\" />\n    </ui:VisualElement>\n</ui:UXML>\n",
+                "m_ContentHash": 95521748,
                 "m_VisualTreeAssetRef": {
                     "fileID": 9197481963319205126,
                     "guid": "4e49ccdde187c7f4c91103d45a6aba10",
@@ -31,9 +31,9 @@
                     "UxmlPath": "Assets/UI Toolkit/GameUI.uxml",
                     "CanvasX": 0,
                     "CanvasY": 0,
-                    "CanvasWidth": 175,
-                    "CanvasHeight": 225,
-                    "MatchGameView": false,
+                    "CanvasWidth": 1200,
+                    "CanvasHeight": 587,
+                    "MatchGameView": true,
                     "ZoomScale": 1.0,
                     "PanOffset": {
                         "x": 468.92596435546877,
@@ -42,13 +42,13 @@
                     "ColorModeBackgroundOpacity": 1.0,
                     "ImageModeCanvasBackgroundOpacity": 1.0,
                     "CameraModeCanvasBackgroundOpacity": 1.0,
-                    "EnableCanvasBackground": false,
+                    "EnableCanvasBackground": true,
                     "CanvasBackgroundMode": 0,
                     "CanvasBackgroundColor": {
                         "r": 0.0,
                         "g": 0.0,
                         "b": 0.0,
-                        "a": 1.0
+                        "a": 0.0
                     },
                     "CanvasBackgroundImage": {
                         "instanceID": 0

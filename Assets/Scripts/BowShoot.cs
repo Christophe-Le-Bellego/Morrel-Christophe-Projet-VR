@@ -6,38 +6,68 @@ public class BowShoot : MonoBehaviour
     [SerializeField] Transform firePoint;
     [SerializeField] float arrowSpeed = 50f;
     [SerializeField] float maxDistance = 100f; // utilise pour le raycast
-    [SerializeField] LineRenderer laserLine;
+    
+    [SerializeField] LayerMask layersToIgnore;
 
 
-void Update()
+
+    private LineRenderer laserLine;
+
+    void Start()
     {
-        AfficherLaser();
+        // 1. CRÉATION AUTOMATIQUE DU COMPOSANT
+        // Si l'objet n'a pas de LineRenderer, on l'ajoute par code
+        laserLine = GetComponent<LineRenderer>();
+        if (laserLine == null)
+        {
+            laserLine = gameObject.AddComponent<LineRenderer>();
+        }
+
+        // 2. CRÉATION AUTOMATIQUE DU MATÉRIAU (Le truc qui te manquait)
+        // On cherche le shader de base "Sprites/Default" qui est toujours présent dans Unity
+        Shader shader = Shader.Find("Sprites/Default");
+        Material laserMat = new Material(shader);
+        
+        // On assigne ce matériau au LineRenderer
+        laserLine.material = laserMat;
+
+        // 3. RÉGLAGES VISUELS (Couleur et Épaisseur)
+        laserLine.startColor = Color.red;
+        laserLine.endColor = Color.red;
+        
+        laserLine.startWidth = 0.05f; // Très fin
+        laserLine.endWidth = 0.05f;
+
+        laserLine.positionCount = 2; // Départ et Arrivée
+        laserLine.useWorldSpace = true; // Important !
     }
 
-    void AfficherLaser()
+    void Update()
     {
-        // 1. Point de départ : Le bout de l'arc
-        laserLine.SetPosition(0, firePoint.position);
+        // Sécurité : si tu as oublié de mettre le FirePoint, on prend la position de l'objet lui-même
+        Vector3 depart = (firePoint != null) ? firePoint.position : transform.position;
+        Vector3 direction = (firePoint != null) ? firePoint.right : transform.right; 
+        // NOTE : Si le laser part vers le haut ou le bas, change "right" par "forward" ou "up"
 
-        // 2. Calcul de la trajectoire
-        Ray ray = new Ray(firePoint.position, firePoint.right);
+        // On place le début du laser
+        laserLine.SetPosition(0, depart);
+
+        Ray ray = new Ray(depart, direction);
         RaycastHit hit;
 
-        // 3. Point d'arrivée
-        if (Physics.Raycast(ray, out hit, maxDistance))
+        // On lance le rayon physique
+        // Le "~layersToIgnore" inverse le masque pour dire "Touche tout SAUF ça"
+        if (Physics.Raycast(ray, out hit, maxDistance, ~layersToIgnore))
         {
-            // Si on touche un mur/ennemi, le laser s'arrête dessus
+            // On touche un mur
             laserLine.SetPosition(1, hit.point);
         }
         else
         {
-            // Si on ne touche rien, le laser va loin devant (maxDistance)
-            laserLine.SetPosition(1, firePoint.position + (firePoint.right * maxDistance));
+            // On ne touche rien, on tire loin
+            laserLine.SetPosition(1, depart + (direction * maxDistance));
         }
     }
-
-
-
 
 
     public void Shoot()

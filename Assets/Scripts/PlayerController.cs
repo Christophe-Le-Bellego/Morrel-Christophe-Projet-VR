@@ -140,7 +140,7 @@ public class PlayerController : MonoBehaviour
 
     /*
     private void FirePressed(InputAction.CallbackContext obj)
-    {
+    {   
         RaycastHit hit;
         Ray ray = cam.ScreenPointToRay(new Vector3(Screen.width / 2.0f, Screen.height / 2.0f, 0));
 

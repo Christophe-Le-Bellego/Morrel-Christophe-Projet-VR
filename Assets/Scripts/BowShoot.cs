@@ -6,8 +6,12 @@ public class BowShoot : MonoBehaviour
     [SerializeField] Transform firePoint;
     [SerializeField] float arrowSpeed = 50f;
 
+
+
+
     public void Shoot()
     {
+        
         //arrowPrefab.transform.Rotate(90, 0, 0);
         //firePoint.Rotate(0, 90, 0);
         GameObject arrow = Instantiate(arrowPrefab, firePoint.position, firePoint.rotation);

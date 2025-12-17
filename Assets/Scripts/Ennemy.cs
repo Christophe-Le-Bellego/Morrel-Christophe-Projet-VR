@@ -7,7 +7,7 @@ public class Ennemy : MonoBehaviour
     [SerializeField] private LayerMask groundCheckMask;
 
     public Transform target;   // R�f�rence � l'objet � suivre
-    public float speed = 0;
+    private float speed = 1f;
     public static int amount = 0;
     public int vie = 2;
     public float mort;
@@ -18,7 +18,7 @@ public class Ennemy : MonoBehaviour
     {
 
         Vector3 direction = target.position - transform.position;
-        //transform.position += direction.normalized * speed * Time.deltaTime;
+        transform.position += direction.normalized * speed * Time.deltaTime;
         if (this.vie <= 0) {
             Mourir();
         }

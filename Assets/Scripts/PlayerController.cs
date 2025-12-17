@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("Camera")] [SerializeField] private Camera cam;
+    [Header("Camera")] [SerializeField] public Camera cam;
     [Header("Movement")]
     [SerializeField] private float camSensitivity;
     [SerializeField] private float moveSensitivity;
@@ -31,13 +31,6 @@ public class PlayerController : MonoBehaviour
     
    
 
-
-
-    /*
-    public CharacterController GetController(){
-        return controller;
-    }
-    */
 
     private GameObject equippedWeapon;
     

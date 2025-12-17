@@ -39,13 +39,35 @@ public class PlayerController : MonoBehaviour
     private float rotationX = 0.0f;
     private bool isGrounded = false;
     private Vector3 velocity = Vector3.zero;
-    public int vie = 100;
+    private int vie = 100;
     public int MaxVie = 100;
     public event Action OnHealthChange;
+    public float lastDamageTime = 0f;
+    public float damageCooldown = 1.0f; // 1 seconde d'attente entre chaque dégât
     public float Jump = 5f;
 
     //---------------------------------- faire un OnHealthChange?.Invoke() ----------------------------------
+    // On perd 8 de vie à chaque collision //
 
+    public void RecevoirDegats()
+    {
+        if (Time.time > lastDamageTime + damageCooldown)
+        {
+            vie -= 8;
+
+            // Le debug pour être SÛR que ça marche
+            Debug.Log("Aïe ! Vie restante : " + vie);
+
+            // Mise à jour de l'UI
+            OnHealthChange?.Invoke();
+            lastDamageTime = Time.time;
+        }
+    }
+
+    public int getVie()
+    {
+        return vie;
+    }
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -154,15 +176,16 @@ public class PlayerController : MonoBehaviour
         controller.Move(transform.TransformDirection(new Vector3(zqsdValue.x, 0, zqsdValue.y)).normalized * moveSensitivity * Time.deltaTime);
 
        
-        if (!controller.isGrounded)
+        if (!controller.isGrounded && velocity.y < 0) 
         {
-            velocity.y += gravity * Time.deltaTime;
+            velocity.y = -2f;
         }
-        
+
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
 
-  
 
     }
+
+
 }

@@ -12,6 +12,7 @@ public class Ennemy : MonoBehaviour
     public int vie = 2;
     public float mort;
     public static float tempsDerniereMort = -1f; // Initialisé bas pour pouvoir spawner dès le début
+    
 
 
     void Update()
@@ -35,5 +36,17 @@ public class Ennemy : MonoBehaviour
         amount--;
         Destroy(gameObject);
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        // Si l'ennemi touche un objet qui a le script "PlayerController"
+        PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+
+        if (player != null)
+        {
+            player.RecevoirDegats(); // On appelle une nouvelle fonction sur le joueur
+        }
+    }
+
 
 }

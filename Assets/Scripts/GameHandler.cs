@@ -21,8 +21,8 @@ public class GameUIHandler : MonoBehaviour
 
     void HealthChanged()
     {
-        m_HealthLabel.text = $"{PlayerControl.vie}/{PlayerControl.MaxVie}";
-        float healthRatio = (float)PlayerControl.vie / PlayerControl.MaxVie;
+        m_HealthLabel.text = $"{PlayerControl.getVie()}/{PlayerControl.MaxVie}";
+        float healthRatio = (float)PlayerControl.getVie() / PlayerControl.MaxVie;
         float healthPercent = Mathf.Lerp(8, 88, healthRatio);
         m_HealthBarMask.style.width = Length.Percent(healthPercent);
     }

@@ -11,6 +11,7 @@ public class BowShoot : MonoBehaviour
 
 void Update()
     {
+        if (laserLine == null) return;
         AfficherLaser();
     }
 

@@ -558,7 +558,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "TITRE \xE0 compl\xE9ter\n"
+  m_Text: "\xE0 compl\xE9ter\n\n"
 --- !u!222 &941681232
 CanvasRenderer:
   m_ObjectHideFlags: 0

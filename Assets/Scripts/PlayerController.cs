@@ -155,18 +155,6 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    /*
-    private void FirePressed(InputAction.CallbackContext obj)
-    {   
-        RaycastHit hit;
-        Ray ray = cam.ScreenPointToRay(new Vector3(Screen.width / 2.0f, Screen.height / 2.0f, 0));
-
-        if (Physics.Raycast(ray, out hit))
-        {
-            Transform objectHit = hit.transform;
-        }
-    }
-    */
 
     // Update is called once per frame
 
@@ -189,8 +177,14 @@ public class PlayerController : MonoBehaviour
         
         Vector2 zqsdValue = zqsd.action.ReadValue<Vector2>();
 
-
         controller.Move(transform.TransformDirection(new Vector3(zqsdValue.x, 0, zqsdValue.y)).normalized * moveSensitivity * Time.deltaTime);
+
+        if (jump.action.triggered && isGrounded)
+        {
+            // Formule physique pour sauter à une hauteur précise : Racine(Hauteur * -2 * Gravité)
+            velocity.y = Mathf.Sqrt(Jump * -2f * gravity);
+        
+        }
 
 
         velocity.y += gravity * Time.deltaTime;

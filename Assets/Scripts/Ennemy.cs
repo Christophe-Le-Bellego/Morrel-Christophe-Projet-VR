@@ -5,8 +5,12 @@ public class Ennemy : MonoBehaviour
     [Header("Settings")]
     public Transform target;
     [SerializeField] private float speed = 7f;
-    public int vie = 2;
+    public int vie = 5;
+    private int maxHealth;
     
+    public EnemyHealthBar healthBarScript;
+
+
     // Distance à laquelle l'ennemi peut taper le joueur
     [SerializeField] private float attackRange = 1.5f; 
 
@@ -20,6 +24,12 @@ public class Ennemy : MonoBehaviour
 
     void Start()
     {
+        maxHealth = vie;
+        if (healthBarScript == null)
+        {
+            healthBarScript = GetComponentInChildren<EnemyHealthBar>();
+        }
+        
         amount++;
 
         // 1. Si pas de cible, on cherche le joueur
@@ -76,6 +86,13 @@ public class Ennemy : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         vie -= damageAmount;
+
+        if (healthBarScript != null)
+        {
+            healthBarScript.UpdateHealthBar(vie, maxHealth);
+        }
+
+
         if (vie <= 0) Mourir();
     }
 

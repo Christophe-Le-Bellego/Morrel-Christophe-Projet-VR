@@ -93,8 +93,15 @@ public class Ennemy : MonoBehaviour
     {
         tempsDerniereMort = Time.time;
         amount--;
+
+        // --- AJOUT : On prévient le gestionnaire que l'ennemi est mort ---
+        if (GestionTexte.instance != null)
+        {
+            GestionTexte.instance.AjouterMortZombie();
+        }
+
         Destroy(gameObject);
     }
-    
+
     // On peut supprimer OnCollisionEnter car on utilise la distance maintenant !
 }

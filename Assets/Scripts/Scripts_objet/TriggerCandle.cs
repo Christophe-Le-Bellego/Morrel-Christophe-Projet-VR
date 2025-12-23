@@ -23,7 +23,7 @@ public class TriggerCandle : MonoBehaviour
             // 1. On prévient le gestionnaire central d'ajouter un point
             if (GestionTexte.instance != null)
             {
-                GestionTexte.instance.AjouterPoint();
+                GestionTexte.instance.AjouterBougie();
             }
 
             // 2. On détruit la bougie

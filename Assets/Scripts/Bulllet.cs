@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
     }
-
+    
     void Start()
     {
         //transform.Rotate(0, 90, 0);

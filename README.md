@@ -22,9 +22,9 @@ This project represents a complete VR game development initiative, combining cut
 
 - **Engine**: Unity
 - **Primary Languages**:
-  - ShaderLab (61.4%) - Advanced graphics and visual effects
-  - C# (25.9%) - Core gameplay logic and systems
-  - HLSL (12.7%) - Low-level graphics programming
+  - ShaderLab - Advanced graphics and visual effects
+  - C#  - Core gameplay logic and systems
+  - HLSL - Low-level graphics programming
 
 ### Architecture
 

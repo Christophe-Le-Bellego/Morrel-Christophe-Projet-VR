@@ -1,8 +1,8 @@
-# Morrel - VR Zombie Combat Experience
+# VR Zombie Combat Experience
 
 ## Overview
 
-Morrel is an immersive virtual reality zombie combat game developed as a comprehensive VR project. The game challenges players to survive and combat waves of zombies in an intense, action-packed environment using realistic VR interactions and mechanics.
+HalloChristmas is an immersive virtual reality zombie combat game developed as a comprehensive VR project. The game challenges players to survive and combat waves of zombies in an intense, action-packed environment using realistic VR interactions and mechanics.
 
 ## Project Description
 
